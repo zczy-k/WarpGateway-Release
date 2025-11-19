@@ -117,8 +117,7 @@ jobs:
             QQ群：[123456789](https://qm.qq.com/q/xxxxx)
           draft: false
           prerelease: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Release in public repo
         uses: softprops/action-gh-release@v2
